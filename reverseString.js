@@ -1,15 +1,11 @@
-/* Task 1 */
+/* Task 2
 
-const stringLength = (string) => {
-  const len = string.length;
+Write a function reverseString(string) function. It should take a string as an argument and return it reversed.
+Write at least one test for this function. */
 
-  if (len < 1) {
-    throw new Error('string length is too short');
-  } else if (len > 10) {
-    throw new Error('string length is too high');
-  }
-
-  return string.length;
+const reverseString = (string) => {
+  const reverse = [...string].reverse();
+  return reverse.join('');
 };
 
-module.exports = stringLength;
+module.exports = reverseString;

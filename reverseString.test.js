@@ -1,13 +1,11 @@
-const stringLength = require('./reverseString');
+const reverseString = require('./reverseString');
 
-it('Count', () =>{
-  expect(stringLength('string')).toBe(6)
+// Reverse String Task
+
+it('works', () => {
+
 })
 
-it('should throw error if string is too high', () =>{
-  expect(() => stringLength('this string is too high')).toThrow('string length is too high');
-})
-
-it('should throw error if string is too short', () =>{
-  expect(() => stringLength('')).toThrow('string length is too short');
+it('returns reversed string', () => {
+  expect(reverseString('string')).toBe('gnirts');
 })

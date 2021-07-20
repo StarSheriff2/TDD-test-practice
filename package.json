@@ -5,7 +5,7 @@
   "main": "reverseString.js",
   "scripts": {
     "test": "jest",
-    "watch": "jest --watch *.js"
+    "watch": "jest --verbose --watch *.js"
   },
   "author": "",
   "license": "ISC",
